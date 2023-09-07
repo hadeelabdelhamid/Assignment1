@@ -9,7 +9,8 @@ body {
 footer{
     margin-top: auto;
     font-weight: bold;
-    font family: 'Cursive'
+    font family: 'Cursive';
+    font color: purple;
 
 }
 .calculator {
