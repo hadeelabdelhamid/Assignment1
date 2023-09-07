@@ -22,8 +22,13 @@ function calculateResult() {
 
 function sine() {
     try {
-        displayValue = Math.sin(eval(displayValue));
-        document.getElementById("display").value = displayValue;
+        const result = Math.sin(eval(displayValue));
+        if (!isNaN(result)) {
+            displayValue = result;
+            document.getElementById("display").value = displayValue;
+        } else {
+            throw "Invalid input";
+        }
     } catch (error) {
         document.getElementById("display").value = "Error";
         displayValue = "";
@@ -32,8 +37,13 @@ function sine() {
 
 function cosine() {
     try {
-        displayValue = Math.cos(eval(displayValue));
-        document.getElementById("display").value = displayValue;
+        const result = Math.cos(eval(displayValue));
+        if (!isNaN(result)) {
+            displayValue = result;
+            document.getElementById("display").value = displayValue;
+        } else {
+            throw "Invalid input";
+        }
     } catch (error) {
         document.getElementById("display").value = "Error";
         displayValue = "";
@@ -42,8 +52,13 @@ function cosine() {
 
 function exponential() {
     try {
-        displayValue = Math.exp(eval(displayValue));
-        document.getElementById("display").value = displayValue;
+        const result = Math.exp(eval(displayValue));
+        if (!isNaN(result)) {
+            displayValue = result;
+            document.getElementById("display").value = displayValue;
+        } else {
+            throw "Invalid input";
+        }
     } catch (error) {
         document.getElementById("display").value = "Error";
         displayValue = "";
@@ -52,8 +67,13 @@ function exponential() {
 
 function naturalLogarithm() {
     try {
-        displayValue = Math.log(eval(displayValue));
-        document.getElementById("display").value = displayValue;
+        const result = Math.log(eval(displayValue));
+        if (!isNaN(result)) {
+            displayValue = result;
+            document.getElementById("display").value = displayValue;
+        } else {
+            throw "Invalid input";
+        }
     } catch (error) {
         document.getElementById("display").value = "Error";
         displayValue = "";
